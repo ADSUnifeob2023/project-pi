@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon --watch src --watch views --ext ts,ejs --exec tsx watch src/server.ts",
     "build": "tsc",
-    "start": "node src/server.ts"
+    "start": "tsx src/server.ts"
   },
   "keywords": [],
   "author": "",
