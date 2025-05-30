@@ -15,11 +15,12 @@
     "body-parser": "^2.2.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "typescript": "^5.8.3"
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.3",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@types/express": "^5.0.2",
-    "nodemon": "^3.1.10",
     "tsx": "^4.19.4"
   }
 }
