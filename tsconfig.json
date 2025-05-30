@@ -1,13 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es2022",
-    "module": "nodenext",
-    "moduleResolution": "node16",
-    "lib": ["es2022"],
+    "target": "ES2020",
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "outDir": "./dist",
     "esModuleInterop": true,
-    "strict": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true
+    "strict": true
   },
-  "include": ["src"]
+  "include": ["src/**/*"]
 }
