@@ -2,21 +2,21 @@ import bodyParser from 'body-parser';
 import { fileURLToPath } from 'url';
 import express from 'express';
 import path from 'path';
+import router from './routers/router';
 
 const app = express();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '../public'))); 
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '../views'));
 
-app.get('/', (req, res) => {
-  res.render('index', { title: 'Hey', message: 'Hello there!' });
-});
+app.use("/", router);
 
 const port = process.env.PORT || 3304;
 app.listen(port, () => console.log(`Server is reuning ${port}`));
