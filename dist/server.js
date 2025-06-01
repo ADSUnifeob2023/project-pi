@@ -1,7 +1,7 @@
 import { fileURLToPath } from 'url';
 import express from 'express';
 import path from 'path';
-import router from './routers/router';
+import router from './routers/router.js';
 const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

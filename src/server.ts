@@ -1,8 +1,7 @@
-import bodyParser from 'body-parser';
 import { fileURLToPath } from 'url';
 import express from 'express';
 import path from 'path';
-import router from './routers/router';
+import router from './routers/router.js';
 
 const app = express();
 
