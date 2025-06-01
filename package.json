@@ -12,7 +12,7 @@
     "prisma:generate": "npx prisma generate" 
   },
   "keywords": [],
-  "author": "",
+  "author": "", 
   "license": "MIT", 
   "dependencies": {
     "@prisma/client": "^6.8.2",
