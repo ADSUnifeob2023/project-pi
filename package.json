@@ -9,7 +9,7 @@
     "start": "npm run prisma:deploy && npm run prisma:generate && node dist/server.js",
     "build": "tsc",
     "prisma:deploy": "npx prisma migrate deploy",
-    "prisma:generate": "npx prisma generate" 
+    "prisma:generate": "npx prisma generate"  
   },
   "keywords": [],
   "author": "",
