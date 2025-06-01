@@ -8,8 +8,8 @@
     "dev": "nodemon --watch src --watch views --ext ts,ejs --exec tsx watch src/server.ts",
     "start": "npm run prisma:deploy && npm run prisma:generate && node dist/server.js",
     "build": "tsc",
-    "prisma:deploy": "prisma migrate deploy",
-    "prisma:generate": "prisma generate"
+    "prisma:deploy": "npx prisma migrate deploy",
+    "prisma:generate": "npx prisma generate"
   },
   "keywords": [],
   "author": "",
