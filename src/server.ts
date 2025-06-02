@@ -3,6 +3,7 @@ import express from 'express';
 import path from 'path';
 import router from './routers/router.js';
 
+
 const app = express();
 
 const __filename = fileURLToPath(import.meta.url);
@@ -17,5 +18,6 @@ app.set('views', path.join(__dirname, '../views'));
 
 app.use("/", router);
 
-const port = process.env.PORT || 3304;
+const port = process.env.PORT || 8181;
+
 app.listen(port, () => console.log(`Server is reuning ${port}`));

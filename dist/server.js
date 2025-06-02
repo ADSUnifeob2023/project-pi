@@ -11,5 +11,5 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '../views'));
 app.use("/", router);
-const port = process.env.PORT || 3304;
+const port = process.env.PORT || 8181;
 app.listen(port, () => console.log(`Server is reuning ${port}`));
